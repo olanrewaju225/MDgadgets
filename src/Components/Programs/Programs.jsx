@@ -13,25 +13,25 @@ import sale from '../../assets/sales.png'
 const Programs = () => {
   return (
     <div className='programs'>
-        <div className="program">
+        <div className="program" data-aos="flip-left" data-aos-duration="1000">
             <img src={sales} alt='' />
             <div className='caption'>
                 <img src={device} />
                 <p>High-Tech Gadget Sales</p>
             </div>
         </div>
-        <div className="program">
+        <div className="program" data-aos="flip-right" data-aos-duration="1000">
             <img src={repair} alt='' />
             <div className='caption'>
                 <img src={tool}/>
                 <p>Fast and Affordable Repairs</p>
             </div>
         </div>
-        <div className="program">
+        <div className="program" data-aos="flip-left" data-aos-duration="1000">
             <img src={bonuses} alt='' />
             <div className='caption'>
                 <img src={sale}/>
-                <p>Exclusive Deals and Refferal Bonuses</p>
+                <p>Exclusive Deals and Bonuses</p>
             </div>
         </div>
       

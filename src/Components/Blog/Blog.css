@@ -1,4 +1,4 @@
-.campus{
+.blog{
     margin: 80px auto;
     width: 90%;
     text-align: center;
@@ -225,7 +225,7 @@
     
 
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .upcoming-article {
         display: grid;
         grid-template-columns: 1fr;

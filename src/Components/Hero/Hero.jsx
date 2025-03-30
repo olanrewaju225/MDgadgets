@@ -3,6 +3,7 @@ import './Hero.css';
 import Typewriter from 'typewriter-effect';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   useEffect(() => {
@@ -13,9 +14,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='hero container'>
-      <div className="hero-text">
-        <h1 data-aos="fade-up">
+    <div className='hero container' >
+      <div className="hero-text"  data-aos="fade-up">
+        <h1>
           <Typewriter 
             options={{
               strings: [
@@ -27,14 +28,20 @@ const Hero = () => {
               autoStart: true, 
               loop: true
             }} 
-          />
+          /> 
+          
+          
+          
         </h1>
-        <p data-aos="fade-up" data-aos-delay="300">
+        <p >
           Your One-Step Shop For Phones, Laptops, Video Games Consoles, Gadget Accessories and More.
         </p>
-        <button className='btn' data-aos="fade-up" data-aos-delay="500">
+        {/* <button className='btn'  data-aos-delay="500">
           Shop now <i className="ri-shopping-cart-line"></i>
-        </button>
+        </button> */}
+        <Link className='btn' to='contact' smooth={true} offset={-260} duration={500}  data-aos-delay="500">
+          Shop now <i className="ri-shopping-cart-line"></i>
+        </Link>
       </div>
     </div>
   );

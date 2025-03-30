@@ -39,13 +39,13 @@
 }
 @media(max-width: 650px){
     .hero-text h1{
-        font-size: 30px;
+        font-size: 50px;
         max-width: 400px;
         margin: auto;
     }
     .hero-text p{
-        font-size: 14px;
-        margin: 15px auto 30px;
+        font-size: 25px;
+        margin: 40px auto 30px;
         
     }
 }

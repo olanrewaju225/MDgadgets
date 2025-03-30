@@ -40,12 +40,12 @@ const handleSubmit = async (e) => {
 
   return (
     <div className='contact'>
-        <div className="contact-col">
+        <div className="contact-col" data-aos="zoom-in-up">
             
             <h3>Send us a Message <i className="ri-mail-line"></i></h3>
             <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our clients.</p>
             <ul>
-                <li><i className="ri-mail-line"></i> Contact@GreatGad.city</li>
+                <li><i className="ri-mail-line"></i>micaeldavid300@gmail.com</li>
                 <li><i className="ri-phone-line"></i> +2348179804517</li>
                 <li><i className="ri-map-pin-line"></i> Number 1, Akinremi street, anifowoshe, Computer Village, Ikeja, Lagos state</li>
 
@@ -54,15 +54,15 @@ const handleSubmit = async (e) => {
             
             <h3>Our Socials</h3>
             <ul className='socials'>
-                <li><a href='/' target="_blank"><i className="ri-instagram-line"></i></a></li>
-                <li><a href='/' target="_blank"><i className="ri-twitter-fill"></i></a></li>
-                <li><a href='/' target="_blank"><i className="ri-whatsapp-line"></i></a></li>
+                <li><a href='https://www.instagram.com/_mdgadgets?igsh=ZDc2ZmVpNmRsbDRh' target="_blank"><i className="ri-instagram-line"></i></a></li>
+                <li><a href='https://x.com/_mdgadgets?s=11' target="_blank"><i className="ri-twitter-fill"></i></a></li>
+                <li><a href='https://wa.me/c/2348179804517' target="_blank"><i className="ri-whatsapp-line"></i></a></li>
             </ul>
             
             
         </div>
 
-        <div className="contact-col">
+        <div className="contact-col" data-aos="zoom-in-down">
             <form onSubmit={handleSubmit}>
                 <label>Your Name</label>
                 <input onChange={(e) => setName(e.target.value)} value={name}  type="text" name="name" placeholder='Enter your name' required/>
@@ -75,7 +75,7 @@ const handleSubmit = async (e) => {
                 <label>Write your message here</label>
                 <textarea name='message' onChange={(e) => setMessage(e.target.value)} value={message}  rows='6' placeholder='Enter your message' required></textarea>
                 
-                <button type='submit' className='btn dark-btn' >Submit now <i class="ri-arrow-right-line"></i></button>
+                <button type='submit' className='btn dark-btn' >Submit</button>
             </form>
             
         </div>

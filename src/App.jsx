@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Programs from './Components/Programs/Programs'
@@ -15,45 +15,33 @@ import Blog from './Components/Blog/Blog'
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <div className='container'>
-        <Title subTitle='Our SERVICES' title='What We Offer'/>
-        <Programs />
-        
-
-        <About />
-
-        <Title subTitle='Our Blog' title='The Little things About Gadgets'/>
-        <Blog />
-        
-        
-        <Title subTitle='TESTIMONIALS' title='What Our Customer Says'/>
-
-        <Testimonials />
-        
-        <Title subTitle='Contact Us' title='Get in Touch'/>
-        <Contact />
-        <Footer />
-      </div> 
-       
-      
-      
-      
-    </div>
     
-        
+      <div className='App'>
+        <Navbar />
+        <Hero />
+          <div className='container'>
+            <Title subTitle='Our SERVICES' title='What We Offer' data-aos="fade-up"/>
+            <Programs />
+            <About />
+            <Title subTitle='Our Blog' title='The Little things About Gadgets'/>
+            <Blog />
+            <Title subTitle='Contact Us' title='Get in Touch'/>
+            <Contact />
+          </div>          
+        <div className='container'>
+          <Footer />
 
-       
-      
-      
-      
-   
+        </div>
+      </div>
     
+
   )
+
 }
 
+
 export default App
+
+
 
 
