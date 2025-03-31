@@ -2,7 +2,7 @@ import React from 'react'
 import './Programs.css'
 
 import sales from '../../assets/sales.jpg'
-import repair from '../../assets/Repair.jpg'
+import repair from '../../assets/repair.jpg'
 import bonuses from '../../assets/Bonuses.jpg'
 
 import device from '../../assets/devicee.png'
