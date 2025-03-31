@@ -1,7 +1,7 @@
 import React from 'react'
 import './Programs.css'
 
-import sales from '../../assets/Sales.jpg'
+import sales from '../../assets/sales.jpg'
 import repair from '../../assets/Repair.jpg'
 import bonuses from '../../assets/Bonuses.jpg'
 
